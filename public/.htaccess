@@ -1,0 +1,17 @@
+#Deny from all
+
+RewriteEngine on
+RewriteRule ^trail/$ trail.php
+RewriteRule ^trail$ trail.php
+
+RewriteRule ^gallery/([a-zA-Z0-9]+)/$ gallery.php?id=$1
+RewriteRule ^gallery/([a-zA-Z0-9]+)$ gallery.php?id=$1
+
+RewriteRule ^about/$ page.php?id=about
+RewriteRule ^about$ page.php?id=about
+
+RewriteRule ^contact/$ page.php?id=contact
+RewriteRule ^contact$ page.php?id=contact
+
+RewriteRule ^statement/$ page.php?id=statement
+RewriteRule ^statement$ page.php?id=statement
