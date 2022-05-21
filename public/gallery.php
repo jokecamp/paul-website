@@ -59,7 +59,8 @@ $setIds = array(
 	);
 
 $galleryName = $_GET["id"];	
-$myApiKey = INSERT API KEY HERE;
+
+include("include/secret.php");
 
 if ($setIds[$galleryName] == null)
 	echo "No gallery available.";

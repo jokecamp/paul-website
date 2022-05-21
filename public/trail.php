@@ -35,7 +35,8 @@ $setIds = array(
 	);
 
 $galleryName = "trail";
-$myApiKey = INSERT API KEY HERE;
+
+include("include/secret.php");
 
 if ($setIds[$galleryName] == null)
 	echo "No gallery available.";

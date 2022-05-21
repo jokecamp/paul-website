@@ -1,5 +1,7 @@
 <?php
 
+include("secret.php");
+
 class PhotoData {
     public $Id = '';
     public $Server = '';
@@ -14,7 +16,7 @@ function GetPhotosFromFlickr($apiKey, $setId)
 {
 	$params = array(
 		'method'	=> 'flickr.photosets.getPhotos',
-		'api_key'	=> $myApiKey = INSERT FLICKR API KEY HERE,
+		'api_key'	=> $myApiKey,
 		'format'	=> 'php_serial',
 		'photoset_id' => $setId,
 		'extras'	  => 'description'

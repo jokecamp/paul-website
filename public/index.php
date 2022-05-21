@@ -2,7 +2,7 @@
 
 <div id="content">
 	<div id="showcase">
-	<a href="/gallery/ceramics/" title="Group Shot by ptenwal, on Flickr"><img src="fontpage.jpg" width="640" height="341" alt="Group Shot" /></a>	
+	<a href="/gallery/ceramics/" title="Group Shot by ptenwal, on Flickr"><img src="brick.jpg" width="640" height="341" alt="Tenwalde Brick" /></a>	
 	</div>
 </div>
 
