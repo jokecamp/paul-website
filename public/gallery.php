@@ -1,7 +1,7 @@
-<?php
-include("include/header.php");
-include("include/creategallery.php");
-include("include/caching.php");
+<?php 
+include("include/header.php"); 
+include("include/creategallery.php"); 
+include("include/caching.php"); 
 ?>
 
 <div id="spotlight">
@@ -9,7 +9,7 @@ include("include/caching.php");
 	<img id="closebutton" src="/close.png" alt="Click to close photo" class="hand" />
 	<div id="phototitle"></div>
 	<div id="photomain"></div>
-	<div id="photodescription"></div>
+	<div id="photodescription"></div>		
 	<div id="photolinks">
 		<a id="prev" class="hand button">&lt;&lt; previous</a>
 		<a id="next" class="hand button">next &gt;&gt;</a>
@@ -26,18 +26,16 @@ include("include/caching.php");
 				<li><a href="/gallery/ceramics/">ceramics</a></li>
 				<li><a href="/gallery/lostworks/">ceramics "lost works"</a></li>
 				<li><a href="/gallery/photography/">photography</a></li>
-				<li><a href="/gallery/street/">street</a></li>
-				<li><a href="/gallery/constructionpaper/">construction paper</a></li>
-				<li><a href="/gallery/origami/">origami</a></li>
-				<li><a href="/gallery/printmaking/">printmaking</a></li>
-				<li><a href="/gallery/fibers/">fibers</a></li>
-				<li><a href="/gallery/sharpie/">sharpie drawings</a></li>
+				<li><a href="/gallery/paper/">paper</a></li>		
+				<li><a href="/gallery/canoe/">canoe</a></li>
+				<li><a href="/gallery/sketches/">sketches</a></li>
 				<li><a href="/gallery/metal/">metal</a></li>
 				<li><a href="/gallery/cardboard/">cardboard</a></li>
-				<li><a href="/gallery/blueprint/">blueprint</a></li>
+				<li><a href="/gallery/design/">design</a></li>
 				<li><a href="/gallery/painting/">painting</a></li>
 				<li><a href="/gallery/woodworking/">woodworking</a></li>
 				<li><a href="/gallery/bike/">bike</a></li>
+                                <li><a href="/gallery/modelmaking/">prototyping &<br> modelmaking</a></li>
 			</ul>
 		</div>
 		<div id="gallery">
@@ -45,24 +43,22 @@ include("include/caching.php");
 <?php
 
 $setIds = array(
-	"ceramics" 			=> "72157625520908354",
-	"fibers"			=> "72157625396583831",
+	"ceramics" 			=> "72157625520908354", 
+	"canoe"			=> "72157625396583831",
 	"cardboard" 			=> "72157625523919650",
 	"metal" 			=> "72157625398515907",
-	"printmaking" 		=> "72157625397253977",
-	"constructionpaper" 		=> "72157625520942154",
-	"sharpie" 			=> "72157625520921090",
-	"street"			=> "72157625624736823",
-	"blueprint"			=> "72157625647822391",
+	"sketches" 			=> "72157625520921090",
+	"design"			=> "72157625647822391",
 	"bike"				=> "72157625060623061",
 	"photography" 		=> "72157626867665215",
 	"painting"			=> "72157625778359982",
 	"lostworks"			=> "72157626626453580",
 	"woodworking"			=> "72157611533833786",
-	"origami"			=> "72157629463629383"
+	"paper"			=> "72157629463629383", 
+        "modelmaking"           => "72177720296933643"
 	);
 
-$galleryName = $_GET["id"];
+$galleryName = $_GET["id"];	
 $myApiKey = INSERT API KEY HERE;
 
 if ($setIds[$galleryName] == null)
@@ -73,11 +69,11 @@ else {
 }
 ?>
 </div>
-
-<?php
+	
+<?php 
 	if ($photos != null) {
 		$format = "<script type='text/javascript'> var json = '%s'; </script>";
-		printf($format, json_encode($photos));
+		printf($format, json_encode($photos));	
 	}
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>

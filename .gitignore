@@ -1,2 +1,5 @@
 download.sh
 secret.txt
+public/cache/
+
+.DS_Store
