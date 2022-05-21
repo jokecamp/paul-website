@@ -6,3 +6,6 @@ Don't forget to re-add the API keys before deployment. Re-add to:
 - trail.php
 - creategallery.php
 - gallery.php
+
+
+Check secret.txt for API Keys (keep out of git)
